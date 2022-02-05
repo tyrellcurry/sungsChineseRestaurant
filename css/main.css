@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+
+:root {
+  --main-red: #ba0107;
+  --main-gold: #f6c45c;
+  --main-gold-hover: #ffd271;
+  --main-font: #ffefe0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: var(--main-font);
+}
+
+body {
+  background-color: var(--main-red);
+}
+
+.hamburger-menu {
+  border: 2px solid black;
+  padding: 1rem;
+  width: 6rem;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  margin-bottom: 0.5rem;
+  background-color: var(--main-gold);
+}
+
+.line-one,
+.line-three {
+  height: 0.4rem;
+  width: 100%;
+}
+.line-two {
+  height: 0.4rem;
+  width: 75%;
+  display: flex;
+  margin-left: auto;
+}
+
+section {
+  border: 3px solid grey;
+  width: 100%;
+  height: 28rem;
+  background-image: url('../images/sungs-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.5rem;
+}
+
+.container {
+  border: 3px solid blue;
+  width: 100%;
+  text-align: center;
+}
+
+.container button {
+  color: var(--main-red);
+  background-color: var(--main-gold);
+  padding: 0.5rem;
+  width: 5rem;
+  border-radius: 15%;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 1.25rem;
+}
+
+.container button:hover {
+  background-color: var(--main-gold-hover);
+}
+
+.phone {
+  margin-top: 0.5rem;
+}
+
+.phone,
+.address {
+  font-size: 1rem;
+}
+
+.delivery,
+.open-days {
+  font-size: 1.25rem;
+}
+
+.phone,
+.address,
+.delivery,
+.open-days {
+  margin-bottom: 1rem;
+}
+
+.title {
+  border-top: 4px solid var(--main-gold);
+  border-bottom: 4px solid var(--main-gold);
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+}
