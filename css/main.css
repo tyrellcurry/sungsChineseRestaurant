@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
 
 :root {
-  --main-red: #ba0107;
-  --main-gold: #f6c45c;
+  --main-red: #920005;
+  --main-gold: #e7a414;
   --main-gold-hover: #ffd271;
   --main-font: #ffefe0;
 }
@@ -23,41 +23,41 @@ body {
 }
 
 .hamburger-menu {
-  border: 2px solid black;
-  padding: 1rem;
-  width: 6rem;
+  /* border: 2px solid black; */
+  padding: 0.75rem;
+  width: 4.5rem;
   cursor: pointer;
 }
 
 .hamburger-menu div {
   margin-bottom: 0.5rem;
   background-color: var(--main-gold);
+  height: 0.4rem;
 }
 
 .line-one,
 .line-three {
-  height: 0.4rem;
   width: 100%;
 }
 .line-two {
-  height: 0.4rem;
   width: 75%;
   display: flex;
   margin-left: auto;
 }
 
 section {
-  border: 3px solid grey;
+  /* border: 3px solid grey; */
   width: 100%;
   height: 28rem;
-  background-image: url('../images/sungs-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.295)),
+    url('../images/sungs-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 1.5rem;
 }
 
 .container {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   width: 100%;
   text-align: center;
 }
@@ -67,7 +67,7 @@ section {
   background-color: var(--main-gold);
   padding: 0.5rem;
   width: 5rem;
-  border-radius: 15%;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -83,20 +83,19 @@ section {
 }
 
 .phone,
-.address {
-  font-size: 1rem;
-}
-
+.address,
 .delivery,
 .open-days {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .phone,
 .address,
 .delivery,
 .open-days {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .title {
@@ -106,4 +105,15 @@ section {
   margin: auto;
   margin-bottom: 1rem;
   padding: 0.75rem;
+}
+
+.fa-phone-square-alt {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.phone a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
