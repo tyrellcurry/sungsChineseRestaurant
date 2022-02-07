@@ -4,41 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/app.js" type="text/javascript"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+    
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <section>
-        <nav>
-          <div class="hamburger-menu">
-            <div class="line-one"></div>
-            <div class="line-two"></div>
-            <div class="line-three"></div>
-          </div>
-        </nav>
-        <div class="container">
+    <nav>
+      <div class="logo">Sung's</div>
+      <div class="phone"><a href="tel:2507872585"
+        ><i class="fas fa-phone-square-alt"></i> (250) 787-2585</a
+      ></div><div class="menu-icon-container">
+        
+        <div class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a class="home" href="#">Home</a></li>
+          <li><a href="#food-menu">Menu</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="main">
+      <div class="hero"><div class="content">
           <div class="title">SUNG’S CHINESE RESTAURANT</div>
-          <div class="phone">
-            <a href="tel:2507872585"
-              ><i class="fas fa-phone-square-alt"></i> (250) 787-2585</a
-            >
-          </div>
           <div class="address">10108 101 AVE FORT ST. JOHN, BC</div>
           <div class="delivery">DELIVERY AND PICKUP ONLY</div>
           <div class="open-days">OPEN 7 DAYS / WEEK</div>
           <div class="menu-btn">
-            <button>Menu</button>
+            <button><a href="#food-menu">View Our Menu</a></button>
+          </div>
+      </div>
+      </div>
+      </div>
+    </section>
+      <section>
+        <div class="food-menu-container">
+          <div class="food-menu">
+            <h2 class="menu-title">
+              Appetizers
+            </h2>
+            <div class="menu-group">
+              <div>Spring roll</div>
+              <div>Spring 2</div>
+              <div>Spring lorem</div>
+            </div>
           </div>
         </div>
-      </section>
-    </header>
+      <!-- <div id="food-menu">
+        <div class="menu-image">
+          <img src="./images/menu.jpg" alt="Sung's Chinese Food Menu">
+        </div>
+      </div> -->
+    </section>
+    <!-- JS -->
+    <script src="./js/app.js" type="text/javascript"></script>
   </body>
 </html>
+
+
+
