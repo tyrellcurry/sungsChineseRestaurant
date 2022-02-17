@@ -5,23 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+    <script src="https://kit.fontawesome.com/359536931d.js" crossorigin="anonymous"></script>
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css" />
     
     <title>Document</title>
   </head>
-  <body>
+  <body class="preload">
     <nav>
       <div class="logo">Sung's</div>
-      <div class="phone"><a href="tel:2507872585"
-        ><i class="fas fa-phone-square-alt"></i> (250) 787-2585</a
-      ></div><div class="menu-icon-container">
+      <div class="menu-icon-container">
         
         <div class="menu-icon">
           <div class="bar"></div>
@@ -39,100 +32,47 @@
     </nav>
     <section class="main">
       <div class="hero"><div class="content">
+        <div class="phone">(250) 787-2585</a
+          ></div>
           <div class="title">SUNG’S CHINESE RESTAURANT</div>
+          <div class="title-line"></div>
           <div class="address">10108 101 AVE FORT ST. JOHN, BC</div>
           <div class="delivery">DELIVERY AND PICKUP ONLY</div>
           <div class="open-days">OPEN 7 DAYS / WEEK</div>
-          <div class="menu-btn">
-            <button><a href="#menu">View Our Menu</a></button>
+          <div class="btn-container">
+            <button class="directions-btn"><a href="https://goo.gl/maps/VXTa5QkTn5p2n5G28" class="directions" target="_blank">Directions</a></button><button class="phone-btn"><a href="tel:2507872585">Call Now</a></button>
+            <div class="menu-btn">
+              <button><a href="#menu">View Our Menu</a></button>
+            </div>
           </div>
       </div>
       </div>
       </div>
     </section>
+    <div class="mobile-wrap">
       <section class="menu-section" id="menu">
         <div class="menu-main-title">
           <h1>Menu</h1>
+        </div><div class="menu-algo" id="menu-algo"></div>
+        <div class="combinations">
+          <div class="menu-items-container">
+            <div class="menu-items">
+              <div class="menu-item-title">
+                <h2>Combinations</h2><div><h3>(Choose Any Items From List)</h3></div><div class="row-price"><h3>3 Items: $16.95</h3><h3>4 Items: $19.95</h3><h3>5 Items: $21.95</h3></div>
+              </div>
+              <div class="row-items" id="combination"></div>
+              <div class="group-meals" id="group-meals"></div>
+              <div><div class="menu-item-title"><h2>Party Trays</h2></div>
+              <div class="party-tray-items" id="party-tray-items"></div>
+            </div>
         </div>
-        <!-- Appies -->
-        <div class="menu-items-container">
-          <div class="menu-items">
-            <div class="menu-item-title">
-              <h2>Appetizers</h2>
-            </div>
-            <div class="food-item-container">
-              <div class="menu-food-item">
-                <span class="food-title"><h3>Spring Rolls</h3></span>
-                <div class="food-price"><h3>$3.00</h3></div>
-              </div>
-              <div class="menu-food-item">
-                <span class="food-title"><h3>Chicken Wings</h3></span>
-                <div class="food-price"><h3>$16.95</h3></div>
-              </div>
-              <div class="menu-food-item">
-                <span class="food-title"><h3>Deep Fried Wonton</h3></span>
-                <div class="food-price"><h3>$13.95</h3></div>
-              </div>
-              <div class="menu-food-item">
-                <span class="food-title"><h3>Dry Garlic Pork (Boneless)</h3></span>
-                <div class="food-price"><h3>$14.95</h3></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Soup -->
-        <div class="menu-items-container">
-          <div class="menu-items">
-            <div class="menu-item-title">
-              <h2>Soup</h2>
-            </div>
-            <div class="food-item-container">
-              <div class="menu-food-item">
-                <span class="food-title"><h3>Wonton Soup</h3></span>
-                <div class="food-price"><h3>$9.50</h3></div>
-              </div>
-              <div class="menu-food-item">
-                <span class="food-title odd"><h3>Wor Wonton Soup</h3></span>
-                <div class="food-price"><h3>$16.95</h3></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Chow Mein -->
-        <div class="menu-items-container">
-          <div class="menu-items">
-            <div class="menu-item-title">
-              <h2>Chow Mein (Egg Noodles)</h2>
-            </div>
-            <div class="food-item-container">
-              <div class="menu-food-item">
-                <span class="food-title"><h3>Chicken Chow Mein</h3></span>
-                <div class="food-price"><h3>$12.95</h3></div>
-              </div>
-              <div class="menu-food-item">
-                <span class="food-title"><h3>Bbq Pork Chow Mein</h3></span>
-                <div class="food-price"><h3>$12.95</h3></div>
-              </div>
-              <div class="menu-food-item">
-                <span class="food-title"><h3>Mushroom Chow Mein</h3></span>
-                <div class="food-price"><h3>$12.95</h3></div>
-              </div>
-              <div class="menu-food-item">
-                <span class="food-title"><h3>Beef Chow Mein</h3></span>
-                <div class="food-price"><h3>$13.95</h3></div>
-              </div>
-              <div class="menu-food-item even">
-                <span class="food-title"><h3>Shrimp Chow Mein</h3></span>
-                <div class="food-price"><h3>$15.95</h3></div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
+        </div></div>
     </section>
+  </div>
+    <!-- MAP -->
+  
     <!-- JS -->
-    <script src="js/app.js" type="text/javascript"></script>
+    <script src="./js/app.js" type="text/javascript"></script>
   </body>
 </html>
 
