@@ -4,11 +4,13 @@
 
 :root {
   --main-red: #920005;
-  --main-accent: #ffdd94;
+  --main-accent: #f4db74;
   --main-nav: rgba(29, 29, 29, 0.95);
   --main-button: #ffc74f;
-  --main-hover: #ee5f00;
-  --main-font: #ffefe0;
+  --main-hover: #f4db74;
+  --main-font: #fdf0e4;
+  --second-font: #fff7da;
+  --menu-bg: #fff3e9;
 }
 
 * {
@@ -47,16 +49,10 @@ nav {
 }
 
 nav > *,
-nav a,
-.phone i {
+nav a {
   color: var(--main-font);
   font-size: 1em;
   cursor: pointer;
-}
-
-nav .phone a {
-  display: flex;
-  align-items: center;
 }
 
 nav .nav {
@@ -141,17 +137,107 @@ nav .nav a:hover {
 
   .hero {
     font-size: 1.5em;
+    padding: 16em 0;
+  }
+
+  .hero button {
+    font-size: 0.7em;
   }
 
   .hero button:hover {
     background-position: left bottom;
   }
+  .title-line {
+    min-width: 600px;
+  }
+  .hero button:hover > a {
+    color: black;
+    transition: all 0.2s ease-out;
+  }
+}
+
+.hero {
+  background: url(../images/sungs-bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero button {
+  text-transform: uppercase;
+  padding: 0.65em;
+  margin-top: 0.75em;
+  border: 2px solid var(--main-hover);
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(
+    to right,
+    var(--main-hover) 50%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  background-size: 300% 200%;
+  background-position: right bottom;
+  transition: all 0.3s ease-out;
+}
+
+.hero button a {
+  color: var(--main-font);
+}
+
+.content > * {
+  color: var(--main-font);
+}
+
+.title {
+  font-size: 2.6em;
+  line-height: 1em;
+  font-family: 'Baloo Da 2', cursive;
+  width: 99%;
+  margin: 0 auto;
+  padding: 0.2em 0;
+}
+
+.title-line {
+  height: 0.1em;
+  width: 60%;
+  background-color: var(--main-hover);
+  margin: auto;
+  min-width: 225px;
+}
+
+.address {
+  padding-top: 0.75em;
+}
+
+.open-days {
+  padding-bottom: 0.25em;
+}
+
+.phone,
+.delivery,
+.address,
+.open-days {
+  color: var(--second-font);
+}
+
+/* Pushing scroll anchor higher to avoid the navbar from hiding content */
+#menu {
+  padding-top: 75px;
+  margin-top: -75px;
 }
 
 /* Small Screen Tweaks */
 @media only screen and (max-width: 470px) {
   nav .nav {
     width: 100%;
+  }
+  .menu-btn {
+    margin-bottom: 50px;
   }
 }
 /* Even Smaller Screen Tweaks */
@@ -167,59 +253,9 @@ nav .nav a:hover {
     height: 3px;
     margin: 3px 0;
   }
-}
-
-.hero {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.295)),
-    url('../images/sungs-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero button {
-  text-transform: uppercase;
-  padding: 0.65em;
-  margin-top: 0.75em;
-  border: 2px solid var(--main-font);
-  background: none;
-  cursor: pointer;
-  font-weight: 600;
-  background: linear-gradient(
-    to right,
-    var(--main-hover) 50%,
-    rgba(255, 255, 255, 0) 50%
-  );
-  background-size: 300% 200%;
-  background-position: right bottom;
-  transition: all 0.33s ease-out;
-}
-
-.hero button a {
-  color: var(--main-font);
-}
-
-.content > * {
-  color: var(--main-font);
-}
-
-.title {
-  font-size: 2em;
-  line-height: 1em;
-  font-family: 'Baloo Da 2', cursive;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.title-line {
-  height: 0.1em;
-  width: 50%;
-  background-color: white;
-  margin: auto;
+  .menu-btn {
+    margin-bottom: 100px;
+  }
 }
 
 /* FOOD MENU */
@@ -280,7 +316,7 @@ nav .nav a:hover {
 /* Background colour for menu section */
 .menu-section,
 .mobile-wrap {
-  background-color: var(--main-font);
+  background-color: var(--menu-bg);
 }
 .menu-food-item {
   display: flex;
