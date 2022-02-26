@@ -467,6 +467,8 @@ for (let i = 0; i < arrPartyItems.length; i++) {
 
 // ~~~~~~ FOOD MENU END ~~~~~~
 
+// ~~~~~~ JQuery Smooth Scrolling ~~~~~~
+
 $(document).ready(function () {
   // Add smooth scrolling to all links
   $('a').on('click', function (event) {
