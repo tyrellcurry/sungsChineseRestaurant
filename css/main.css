@@ -40,18 +40,6 @@
   -o-transition: none !important;
 }
 
-/* Webkit Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 12px;
-}
-::-webkit-scrollbar-track {
-  border-radius: px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.418);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--scrollBar);
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -394,10 +382,6 @@ nav .nav a:hover {
   margin-bottom: 0.5em;
 }
 
-.contact-box input:focus {
-  border-color: var(--hero-bg);
-}
-
 .contact-box button {
   margin-top: 1em;
   margin-bottom: 1.5em;
@@ -422,7 +406,7 @@ nav .nav a:hover {
 .contact-box input,
 .contact-box textarea {
   font-size: 1.15em;
-  border-color: rgb(85, 85, 85);
+  /* border-color: rgb(85, 85, 85); */
   outline: none;
   padding: 0.5em;
 }
