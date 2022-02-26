@@ -6,10 +6,10 @@ const groupMeals = document.getElementById('group-meals');
 const partyTrays = document.getElementById('party-tray-items');
 let menuOpen = false;
 
-//Ensures Nav Responsiveness
+//Ensures Mobile Nav is closed on load
 window.addEventListener('resize', resize);
 function resize() {
-  if (window.innerWidth > 470) {
+  if (window.innerWidth > 469) {
     nav.style.display = 'flex';
   } else {
     nav.style.display = 'none';
@@ -31,7 +31,7 @@ menuIcon.addEventListener('click', (e) => {
 //Prevents animations from triggering on page load
 document.body.classList.remove('preload');
 
-// ~~~~~~ FOOD MENU ~~~~~~
+// ~~~~~~ FOOD MENU START ~~~~~~
 
 //Menu Object (where all the menu data is stored)
 const menuObj = {
@@ -399,7 +399,7 @@ const objCategories = [
   menuObj.eggFooYong,
 ];
 
-//Creates an array of code to push into the arrItems array which is used later to populate the page with code
+//Creates an array of injectable html code that pushes into the arrItems array. The arrItems array is used later to populate the innerHTML
 const arrItems = [];
 function menuItems(n) {
   let result = '';
@@ -416,7 +416,7 @@ function menuItems(n) {
 for (let i = 0; i < objCategories.length; i++) {
   arrItems.push(menuItems(objCategories[i]));
 }
-//Iterates through the arrCategory Length and populates the Category Title into the page including the array of code (menu items)
+//Iterates through the arrCategory length and populates the Category Titles into the page including the array of injectable code (menu items)
 for (let i = 0; i < arrCategory.length; i++) {
   menuAlgo.innerHTML +=
     `
@@ -431,13 +431,13 @@ for (let i = 0; i < arrCategory.length; i++) {
   `;
 }
 
-// Iterate through combination array and populate into page
+// Iterates through the combination array and populates into page
 
 for (let i = 0; i < arrCombination.length; i++) {
   combination.innerHTML += `<h3>${arrCombination[i]}</h3>`;
 }
 
-// Iterate through Group Dinners and add the Group Array items
+// Iterates through Group Dinners and adds the Group Array items
 
 for (let i = 0; i < arrGroupArr.length; i++) {
   groupMeals.innerHTML +=
@@ -458,10 +458,11 @@ for (let i = 0; i < partyTrayArr.length; i++) {
   arrPartyItems.push(menuItems(partyTrayArr));
 }
 
-// Populate page with Party Tray menu items
-
+// Populates the page with Party Tray menu items
 for (let i = 0; i < arrPartyItems.length; i++) {
   partyTrays.innerHTML = `<div class="food-item-container">
   ${arrPartyItems[i]}
   </div>`;
 }
+
+// ~~~~~~ FOOD MENU END ~~~~~~

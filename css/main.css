@@ -5,12 +5,16 @@
 :root {
   --main-red: #920005;
   --main-accent: #f4db74;
-  --main-nav: rgba(29, 29, 29, 0.95);
+  --main-nav: rgba(26, 26, 26, 0.95);
   --main-button: #ffc74f;
   --main-hover: #f4db74;
-  --main-font: #fdf0e4;
+  --main-font: #faf2ed;
   --second-font: #fff7da;
-  --menu-bg: #fff3e9;
+  --menu-bg: #faf2ed;
+  --menu-font: rgb(33, 36, 44);
+  --scrollBar: #bc2828;
+  --button: #f56d1f;
+  --hero-bg: #bc2828;
 }
 
 * {
@@ -19,7 +23,7 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  color: black;
+  color: var(--menu-font);
   scroll-behavior: smooth;
 }
 
@@ -34,6 +38,18 @@
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
+}
+
+/* Webkit Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  border-radius: px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.418);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollBar);
 }
 
 nav {
@@ -93,6 +109,90 @@ nav .nav a:hover {
   margin: 5px 0;
 }
 
+.hero {
+  background: url(../images/sungs-bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-button {
+  text-transform: uppercase;
+  padding: 0.65em;
+  margin-top: 0.75em;
+  border: 2px solid var(--main-hover);
+  background: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  background: linear-gradient(
+    to right,
+    var(--main-hover) 50%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  background-size: 300% 200%;
+  background-position: right bottom;
+  transition: all 0.28s ease-out;
+}
+
+.main-button {
+  color: var(--main-font);
+}
+
+.content > * {
+  color: var(--main-font);
+}
+
+.title {
+  font-size: 2.6em;
+  line-height: 1em;
+  font-family: 'Baloo Da 2', cursive;
+  width: 99%;
+  margin: 0 auto;
+  padding: 0.2em 0;
+}
+
+.title-line {
+  height: 0.1em;
+  width: 60%;
+  background-color: var(--main-hover);
+  margin: auto;
+  min-width: 225px;
+}
+
+.address {
+  padding-top: 0.75em;
+}
+
+.open-days {
+  padding-bottom: 0.25em;
+}
+
+.phone,
+.delivery,
+.address,
+.open-days {
+  color: var(--second-font);
+}
+
+.contact,
+.thank-you-body {
+  background: url(../images/sungs-bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Pushing scroll anchor higher to avoid the navbar from hiding content */
+#menu {
+  padding-top: 75px;
+  margin-top: -75px;
+  padding-bottom: 4em;
+}
+
 /* Desktop Responsive */
 @media only screen and (min-width: 470px) {
   nav {
@@ -140,121 +240,23 @@ nav .nav a:hover {
     padding: 16em 0;
   }
 
-  .hero button {
+  .main-button {
     font-size: 0.7em;
   }
 
-  .hero button:hover {
+  .main-button:hover {
     background-position: left bottom;
+    color: var(--menu-font);
   }
   .title-line {
-    min-width: 600px;
+    min-width: 350px;
   }
-  .hero button:hover > a {
-    color: black;
-    transition: all 0.2s ease-out;
-  }
-}
-
-.hero {
-  background: url(../images/sungs-bg-2.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero button {
-  text-transform: uppercase;
-  padding: 0.65em;
-  margin-top: 0.75em;
-  border: 2px solid var(--main-hover);
-  background: none;
-  cursor: pointer;
-  font-weight: 600;
-  background: linear-gradient(
-    to right,
-    var(--main-hover) 50%,
-    rgba(255, 255, 255, 0) 50%
-  );
-  background-size: 300% 200%;
-  background-position: right bottom;
-  transition: all 0.3s ease-out;
-}
-
-.hero button a {
-  color: var(--main-font);
-}
-
-.content > * {
-  color: var(--main-font);
-}
-
-.title {
-  font-size: 2.6em;
-  line-height: 1em;
-  font-family: 'Baloo Da 2', cursive;
-  width: 99%;
-  margin: 0 auto;
-  padding: 0.2em 0;
-}
-
-.title-line {
-  height: 0.1em;
-  width: 60%;
-  background-color: var(--main-hover);
-  margin: auto;
-  min-width: 225px;
-}
-
-.address {
-  padding-top: 0.75em;
-}
-
-.open-days {
-  padding-bottom: 0.25em;
-}
-
-.phone,
-.delivery,
-.address,
-.open-days {
-  color: var(--second-font);
-}
-
-/* Pushing scroll anchor higher to avoid the navbar from hiding content */
-#menu {
-  padding-top: 75px;
-  margin-top: -75px;
 }
 
 /* Small Screen Tweaks */
 @media only screen and (max-width: 470px) {
   nav .nav {
     width: 100%;
-  }
-  .menu-btn {
-    margin-bottom: 50px;
-  }
-}
-/* Even Smaller Screen Tweaks */
-@media only screen and (max-width: 310px) {
-  .content {
-    padding-top: 2em;
-  }
-  nav {
-    font-size: 0.8em;
-  }
-  .menu-icon > * {
-    width: 25px;
-    height: 3px;
-    margin: 3px 0;
-  }
-  .menu-btn {
-    margin-bottom: 100px;
   }
 }
 
@@ -296,13 +298,13 @@ nav .nav a:hover {
 }
 
 .menu-main-title {
-  padding: 1em 0;
-  font-size: 1.5em;
+  padding-bottom: 1em;
+  font-size: 1.75em;
 }
 
 .menu-item-title {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid var(--menu-font);
+  border-bottom: 2px solid var(--menu-font);
   padding: 0.5em;
   margin-top: 1em;
 }
@@ -368,6 +370,129 @@ nav .nav a:hover {
   color: rgb(201, 0, 0);
 }
 
+/* Contact Us */
+
+.contact {
+  height: 600px;
+  display: grid;
+  place-items: center;
+}
+
+.contact-box {
+  max-height: 500px;
+  max-width: 500px;
+  background-color: var(--menu-bg);
+  padding: 60px 30px;
+}
+
+.contact-box form > * {
+  width: 100%;
+  margin-top: 0.25em;
+}
+
+.contact-box input {
+  margin-bottom: 0.5em;
+}
+
+.contact-box input:focus {
+  border-color: var(--hero-bg);
+}
+
+.contact-box button {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  padding: 0.5em;
+  font-size: 15px;
+  background-color: var(--main-button);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact-box button:hover {
+  background-color: var(--main-hover);
+}
+
+.contact-title {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.contact-box input,
+.contact-box textarea {
+  font-size: 1.15em;
+  border-color: rgb(85, 85, 85);
+  outline: none;
+  padding: 0.5em;
+}
+
+#message {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--menu-bg);
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.column1,
+.column2 {
+  width: 10em;
+}
+
+.line {
+  min-width: 3px;
+  background-color: var(--hero-bg);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.attribute {
+  font-size: 0.75em;
+  text-align: center;
+  background-color: var(--menu-bg);
+}
+
+/* Thank you page */
+
+.thank-you-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+
+.thank-you-box {
+  text-align: center;
+  width: 90%;
+}
+
+.thank-you-box h1 {
+  font-size: 2em;
+}
+
+.thank-you-box a,
+.thank-you-box h1 {
+  color: var(--main-font);
+}
+
+.thank-you-box a:hover {
+  color: black;
+}
+
+.thank-you-box button {
+  font-size: 1em;
+  margin-top: 2em;
+}
+
+/* Desktop Responsiveness */
+
 @media screen and (min-width: 900px) {
   .menu-food-item:nth-child(odd) {
     margin-right: 2em;
@@ -393,5 +518,16 @@ nav .nav a:hover {
   }
   .group-items {
     width: 50%;
+  }
+  .contact-box {
+    padding: 60px 80px;
+  }
+  .line {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  #message {
+    max-height: 100px;
+    min-height: 100px;
   }
 }
