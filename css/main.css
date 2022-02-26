@@ -98,7 +98,7 @@ nav .nav a:hover {
 }
 
 .hero {
-  background: url(../images/sungs-bg-2.jpg);
+  background: url(../images/sungs-bg-2-mobile.png);
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -165,13 +165,6 @@ nav .nav a:hover {
 .address,
 .open-days {
   color: var(--second-font);
-}
-
-.contact,
-.thank-you-body {
-  background: url(../images/sungs-bg-2.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 /* Pushing scroll anchor higher to avoid the navbar from hiding content */
@@ -434,6 +427,11 @@ nav .nav a:hover {
 /* Desktop Responsiveness */
 
 @media screen and (min-width: 900px) {
+  .hero {
+    background: url(../images/sungs-bg-2.png);
+    background-size: cover;
+    background-position: center;
+  }
   .menu-food-item:nth-child(odd) {
     margin-right: 2em;
   }
@@ -467,7 +465,7 @@ nav .nav a:hover {
     margin-right: 5rem;
   }
   .footer {
-    background: url(../images/sungs-bg-2.jpg);
+    background: url(../images/sungs-bg-2.png);
     background-size: cover;
     background-position: center;
   }
