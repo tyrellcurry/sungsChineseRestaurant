@@ -4,19 +4,21 @@
 
 ## Description:
 
-### Showcasing a mobile responsive website built from scratch with pure HTML5, CSS3, and Vanilla JS
+### Showcasing a mobile responsive website built from scratch with HTML5, CSS3, and JS
 
 ## Built With:
 
 - ### HTML5
 - ### CSS3
 - ### Vanilla JavaScript
+- ### JQuery
 
 ## Funtionality:
 
 - ### Fully mobile responsive
 - ### CSS Animations
-- ### Menu populated using DOM manipulation
+- ### Menu populated using Vanilla JS DOM manipulation and iterations
+- ### Smooth scrolling utilizing JQuery for cross browser support
 
 ## [Check Out The Project!](https://tyrellcurry.github.io/sungsChineseRestaurant/)
 

@@ -24,7 +24,7 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   color: var(--menu-font);
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 *,
@@ -168,7 +168,8 @@ nav .nav a:hover {
 }
 
 .contact,
-.thank-you-body {
+.thank-you-body,
+.footer {
   background: url(../images/sungs-bg-2.jpg);
   background-size: cover;
   background-position: center;
@@ -176,8 +177,8 @@ nav .nav a:hover {
 
 /* Pushing scroll anchor higher to avoid the navbar from hiding content */
 #menu {
-  padding-top: 75px;
-  margin-top: -75px;
+  padding-top: 60px;
+  margin-top: -60px;
   padding-bottom: 4em;
 }
 
@@ -419,7 +420,6 @@ nav .nav a:hover {
 /* Footer */
 
 .footer {
-  background-color: var(--menu-bg);
   display: flex;
   justify-content: center;
   padding: 2em 0;
@@ -430,11 +430,16 @@ nav .nav a:hover {
   width: 10em;
 }
 
+.column1 > *,
+.column2 > * {
+  color: var(--main-font);
+}
+
 .line {
   min-width: 3px;
-  background-color: var(--hero-bg);
+  background-color: var(--main-accent);
   margin-left: 1rem;
-  margin-right: 1rem;
+  margin-right: 1.75rem;
 }
 
 .attribute {
