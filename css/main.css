@@ -98,7 +98,11 @@ nav .nav a:hover {
 }
 
 .hero {
+<<<<<<< HEAD
   background: url(../images/sungs-bg-2-mobile-2.png);
+=======
+  background: url(../images/sungs-bg-mobile.png);
+>>>>>>> dev_branch
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -428,7 +432,7 @@ nav .nav a:hover {
 
 @media screen and (min-width: 900px) {
   .hero {
-    background: url(../images/sungs-bg-2.png);
+    background: url(../images/sungs-bg-desktop.png);
     background-size: cover;
     background-position: center;
   }
@@ -465,7 +469,7 @@ nav .nav a:hover {
     margin-right: 5rem;
   }
   .footer {
-    background: url(../images/sungs-bg-2.png);
+    background: url(../images/sungs-bg-desktop.png);
     background-size: cover;
     background-position: center;
   }
