@@ -98,10 +98,10 @@ nav .nav a:hover {
 }
 
 .hero {
-  background: url(../images/sungs-bg-mobile.png);
+  background: url(../images/sungs-bg-mobile-2.png);
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,9 +387,14 @@ nav .nav a:hover {
 }
 
 .attribute {
-  font-size: 0.75em;
+  font-size: 0.4em;
   text-align: center;
   background-color: var(--menu-bg);
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.attribute > * {
+  color: rgba(0, 0, 0, 0.65);
 }
 
 /* Thank you page */
