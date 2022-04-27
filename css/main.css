@@ -163,9 +163,48 @@ nav .nav a:hover {
 .phone,
 .delivery,
 .address,
-.open-days {
+.open-days,
+.annoucement,
+.annoucement-txt {
   color: var(--second-font);
+  text-transform: uppercase;
 }
+
+/* Dine In Announcement */
+.annoucement {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-accent);
+}
+
+.annoucement-txt {
+  padding: 0 0.22em;
+  color: var(--main-accent);
+}
+
+.announcement-banner {
+  background-color: black;
+  margin-top: -60px;
+  padding: 3em;
+  text-align: center;
+}
+
+.announcement-banner h2 {
+  font-size: 2em;
+}
+
+.fa-star {
+  color: var(--second-font);
+  color: var(--main-accent);
+}
+
+.star-two {
+  font-size: 0.65em;
+}
+
+/* Dine In Annoucement */
 
 /* Pushing scroll anchor higher to avoid the navbar from hiding content */
 #menu {
