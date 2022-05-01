@@ -204,8 +204,6 @@ nav .nav a:hover {
   font-size: 0.65em;
 }
 
-/* Dine In Annoucement */
-
 /* Pushing scroll anchor higher to avoid the navbar from hiding content */
 #menu {
   padding-top: 60px;
@@ -265,7 +263,7 @@ nav .nav a:hover {
   }
 
   .main-button:hover {
-    background-position: left bottom;
+    background-position: left;
     color: var(--menu-font);
   }
   .title-line {
@@ -434,38 +432,6 @@ nav .nav a:hover {
 
 .attribute > * {
   color: rgba(0, 0, 0, 0.65);
-}
-
-/* Thank you page */
-
-.thank-you-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  margin-top: 25%;
-}
-
-.thank-you-box {
-  text-align: center;
-  width: 90%;
-}
-
-.thank-you-box h1 {
-  font-size: 2em;
-}
-
-.thank-you-box a,
-.thank-you-box h1 {
-  color: var(--main-font);
-}
-
-.thank-you-box a:hover {
-  color: black;
-}
-
-.thank-you-box button {
-  font-size: 1em;
-  margin-top: 2em;
 }
 
 /* Desktop Responsiveness */
