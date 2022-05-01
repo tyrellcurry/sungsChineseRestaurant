@@ -20,7 +20,7 @@
 - ### Menu populated using Vanilla JS DOM manipulation and iterations
 - ### Smooth scrolling utilizing JQuery for cross browser support
 
-## [Check Out The Project!](https://tyrellcurry.github.io/sungsChineseRestaurant/)
+## [Check Out The Project!](https://sungschineserestaurant.com/)
 
 <br />
 
