@@ -24,7 +24,7 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   color: var(--menu-font);
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 *,
@@ -512,7 +512,7 @@ nav .nav a:hover {
 
 /* Modal */
 
-.modal {
+/* .modal {
  position: fixed;
  left: 0;
  top: 0;
@@ -562,7 +562,7 @@ nav .nav a:hover {
 }
 .modal-content h4 {
   font-size: 1.5rem;
-}
+} */
 
 @media screen and (max-width: 478px) {
  .modal-content {

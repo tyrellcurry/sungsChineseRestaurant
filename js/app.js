@@ -466,7 +466,7 @@ for (let i = 0; i < arrPartyItems.length; i++) {
 }
 
 // ~~~~~~ FOOD MENU END ~~~~~~
-
+/* 
 // Modal  
   const modal = document.querySelector('.modal');
   const closeModal = document.querySelector('.close-button');
@@ -480,4 +480,4 @@ setTimeout(function () {
 closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
 });
-
+*/
