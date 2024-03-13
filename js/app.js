@@ -55,233 +55,233 @@ const menuObj = {
     },
     {
       name: 'Chicken Wings',
-      price: '$16.95',
+      price: '$18.95',
     },
     {
       name: 'Deep Fried Wonton',
-      price: '$13.95',
+      price: '$15.95',
     },
     {
       name: 'Dry Garlic Pork (Bonelesss)',
-      price: '$14.95',
+      price: '$16.95',
     },
   ],
   soup: [
     {
       name: 'Wonton Soup',
-      price: '$9.50',
+      price: '$12.95',
     },
     {
       name: 'Wor Wonton Soup',
-      price: '$16.95',
+      price: '$18.95',
     },
   ],
   chowMein: [
     {
       name: 'Chicken Chow Mein',
-      price: '$12.95',
+      price: '$14.95',
     },
     {
       name: 'Bbq Pork Chow Mein',
-      price: '$12.95',
+      price: '$14.95',
     },
     {
       name: 'Mushroom Chow Mein',
-      price: '$12.95',
+      price: '$14.95',
     },
     {
       name: 'Beef Chow Mein',
-      price: '$13.95',
+      price: '$15.95',
     },
     {
       name: 'Shrimp Chow Mein',
-      price: '$15.95',
+      price: '$17.95',
     },
     {
       name: 'House Special Chow Mein',
-      price: '$16.95',
+      price: '$18.95',
     },
     {
       name: 'Shanghai Chow Mein (<i class="fa-solid fa-pepper-hot"></i> Spicy)',
-      price: '$15.95',
+      price: '$17.95',
     },
     {
       name: 'Singapore Chow Mein',
-      price: '$15.95',
+      price: '$17.95',
     },
   ],
   friedRice: [
     {
       name: 'Beef Fried Rice',
-      price: '$12.95',
+      price: '$14.95',
     },
     {
       name: 'Bbq Pork Fried Rice',
-      price: '$12.95',
+      price: '$14.95',
     },
     {
       name: 'Chicken Fried Rice',
-      price: '$12.95',
+      price: '$14.95',
     },
     {
       name: 'Mushroom Fried Rice',
-      price: '$12.95',
+      price: '$14.95',
     },
     {
       name: 'Shrimp Fried Rice',
-      price: '$15.95',
+      price: '$17.95',
     },
     {
       name: 'House Special Fried Rice',
-      price: '$16.95',
+      price: '$18.95',
     },
     {
       name: 'Steamed Rice',
-      price: '$3.00',
+      price: '$4.00',
     },
   ],
   chopSuey: [
     {
       name: 'Beef Chop Suey',
-      price: '$14.95',
-    },
-    {
-      name: 'Bbq Pork Chop Suey',
-      price: '$13.95',
-    },
-    {
-      name: 'Chicken Chop Suey',
-      price: '$13.95',
-    },
-    {
-      name: 'Mushroom Chop Suey',
-      price: '$13.95',
-    },
-    {
-      name: 'Shrimp Chop Suey',
       price: '$16.95',
     },
     {
+      name: 'Bbq Pork Chop Suey',
+      price: '$16.95',
+    },
+    {
+      name: 'Chicken Chop Suey',
+      price: '$16.95',
+    },
+    {
+      name: 'Mushroom Chop Suey',
+      price: '$16.95',
+    },
+    {
+      name: 'Shrimp Chop Suey',
+      price: '$18.95',
+    },
+    {
       name: 'House Special Chop Suey',
-      price: '$17.95',
+      price: '$19.95',
     },
   ],
   pork: [
     {
       name: 'Sweet & Sour Pork (Boneless)',
-      price: '$14.95',
+      price: '$16.95',
     },
     {
       name: 'Honey Garlic Pork (Boneless)',
-      price: '$15.95',
+      price: '$17.95',
     },
     {
       name: 'Pork With Black Bean Sauce',
-      price: '$17.95',
+      price: '$19.95',
     },
     {
       name: 'Sliced Bbq Pork',
-      price: '$17.95',
+      price: '$20.95',
     },
     {
       name: 'Pork With Hot Chilli Sauce (<i class="fa-solid fa-pepper-hot"></i> Spicy)',
-      price: '$17.95',
+      price: '$20.95',
     },
   ],
   chicken: [
     {
       name: 'Sweet & Sour Chicken Balls',
-      price: '$15.95',
+      price: '$17.95',
     },
     {
       name: 'Breaded & Almond Chicken',
-      price: '$16.95',
+      price: '$18.95',
     },
     {
       name: 'Breaded & Lemon Chicken',
-      price: '$16.95',
+      price: '$18.95',
     },
     {
       name: 'Curry Chicken (<i class="fa-solid fa-pepper-hot"></i> Spicy)',
-      price: '$16.95',
+      price: '$19.95',
     },
     {
       name: 'Chicken With Black Bean Sauce',
-      price: '$16.95',
+      price: '$19.95',
     },
     {
       name: 'Teriyaki Chicken',
-      price: '$16.95',
+      price: '$19.95',
     },
     {
       name: 'Chicken With Hot Chilli Sauce (<i class="fa-solid fa-pepper-hot"></i> Spicy)',
-      price: '$17.95',
+      price: '$19.95',
     },
   ],
   beef: [
     {
       name: 'Beef & Brocoli',
-      price: '$15.95',
+      price: '$17.95',
     },
     {
       name: 'Curry Beef (<i class="fa-solid fa-pepper-hot"></i> Spicy)',
-      price: '$16.95',
+      price: '$18.95',
     },
     {
       name: 'Ginger Beef (<i class="fa-solid fa-pepper-hot"></i> Spicy)',
-      price: '$17.95',
+      price: '$19.95',
     },
     {
       name: 'Beef & Black Bean Sauce',
-      price: '$17.95',
+      price: '$19.95',
     },
     {
       name: 'Beef With Hot Chilli (<i class="fa-solid fa-pepper-hot"></i> Spicy)',
-      price: '$17.95',
+      price: '$19.95',
     },
   ],
   seafood: [
     {
       name: 'Deep Fried Prawns',
-      price: '17.95',
+      price: '19.95',
     },
     {
       name: 'Pan Fried Prawns',
-      price: '20.95',
+      price: '22.95',
     },
     {
       name: 'Curry Prawns (<i class="fa-solid fa-pepper-hot"></i> Spicy)',
-      price: '17.95',
+      price: '22.95',
     },
     {
       name: 'Prawns With Black Bean Sauce',
-      price: '20.95',
+      price: '22.95',
     },
     {
       name: 'Prawns With Hot Chilli Sauce (<i class="fa-solid fa-pepper-hot"></i> Spicy)',
-      price: '20.95',
+      price: '22.95',
     },
   ],
   eggFooYong: [
     {
       name: 'Egg Foo Yong (Original)',
-      price: '$14.95',
+      price: '$16.95',
     },
     {
       name: 'Bbq Pork Egg Foo Yong',
-      price: '$14.95',
+      price: '$16.95',
     },
     {
       name: 'Chicken Egg Foo Yong',
-      price: '$14.95',
+      price: '$16.95',
     },
     {
       name: 'Mushroom Egg Foo Yong',
-      price: '$14.95',
+      price: '$16.95',
     },
     {
       name: 'Shrimp Egg Foo Yong',
-      price: '$16.95',
+      price: '$18.95',
     },
   ],
   combination: [
@@ -299,23 +299,23 @@ const menuObj = {
   groupMealCategories: [
     {
       name: 'Group Dinner For 2',
-      price: '$37.75',
+      price: '$48.95',
     },
     {
       name: 'Group Dinner For 3',
-      price: '$52.95',
+      price: '$65.95',
     },
     {
       name: 'Group Dinner For 4',
-      price: '$69.95',
+      price: '$85.95',
     },
     {
       name: 'Group Dinner For 5',
-      price: '$86.95',
+      price: '$103.95',
     },
     {
       name: 'Group Dinner For 6',
-      price: '$99.95',
+      price: '$122.95',
     },
   ],
   groupArray: [
@@ -339,44 +339,44 @@ const menuObj = {
   partyTrayitems: [
     {
       name: 'Dry Spareribs (Boneless)',
-      price: '$55',
+      price: '$65',
     },
     {
       name: 'Sweet & Sour Pork (Boneless)',
-      price: '$55',
+      price: '$69',
     },
     {
       name: 'Sweet & Sour Chicken Balls',
-      price: '$65',
+      price: '$75',
     },
     {
       name: 'Deep Fried Prawns',
-      price: '$65',
+      price: '$75',
     },
     {
       name: 'Deep Fried Wonton',
-      price: '$55',
+      price: '$65',
     },
     {
       name: 'Deep Fried Chicken Wings',
-      price: '$65',
+      price: '$78',
     },
     {
       name: 'Fried Rice (Beef or Chicken)',
-      price: '$52',
+      price: '$62',
     },
     {
       name: 'Chow Mein (Beef or Chicken)',
-      price: '$52',
+      price: '$62',
     },
     {
       name: 'Chop Suey (Beef or Chicken)',
-      price: '$55',
+      price: '$68',
     },
-    {
-      name: 'Salty Spicy Prawns (With Shell)',
-      price: '$65',
-    },
+    // {
+    //   name: 'Salty Spicy Prawns (With Shell)',
+    //   price: '$65',
+    // },
   ],
 };
 
