@@ -402,6 +402,13 @@ nav .nav a:hover {
   padding: 2em;
 }
 
+.custom-a-tag {
+  text-decoration: none;
+  color: inherit;
+  cursor: auto;
+  pointer-events: none;
+}
+
 .column1,
 .column2 {
   width: 10em;
