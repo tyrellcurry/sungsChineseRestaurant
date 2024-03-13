@@ -393,6 +393,16 @@ nav .nav a:hover {
   color: rgb(201, 0, 0);
 }
 
+/* Disclaimer */
+.disclaimer {
+  font-size: .935rem;
+  padding-top: .5rem;
+  font-weight: 600;
+}
+.disclaimer p:first-child {
+  padding-bottom: .5rem;
+}
+
 /* Footer */
 
 .footer {
@@ -497,6 +507,15 @@ nav .nav a:hover {
   }
   .column2 {
     padding-left: 0;
+  }
+  /* Disclaimer */
+  .disclaimer {
+    font-size: 1.03rem;
+    padding-top: .5rem;
+    font-weight: 600;
+  }
+  .disclaimer p:first-child {
+    padding-bottom: .25rem;
   }
 }
 
