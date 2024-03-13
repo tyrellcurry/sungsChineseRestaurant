@@ -161,14 +161,17 @@ nav .nav a:hover {
 }
 
 .phone,
+.phone a,
 .delivery,
 .address,
+.address a,
 .open-days,
 .annoucement,
 .annoucement-txt {
   text-decoration: none;
-  color: var(--second-font);
+  color: var(--second-font) !important;
   text-transform: uppercase;
+  cursor: auto;
 }
 
 /* Dine In Announcement */
