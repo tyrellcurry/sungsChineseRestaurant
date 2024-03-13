@@ -172,6 +172,7 @@ nav .nav a:hover {
   color: var(--second-font) !important;
   text-transform: uppercase;
   cursor: auto;
+  pointer-events: none;
 }
 
 /* Dine In Announcement */
