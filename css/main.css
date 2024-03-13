@@ -166,6 +166,7 @@ nav .nav a:hover {
 .open-days,
 .annoucement,
 .annoucement-txt {
+  text-decoration: none;
   color: var(--second-font);
   text-transform: uppercase;
 }
